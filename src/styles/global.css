@@ -89,6 +89,10 @@ body {
   padding: 0;
 }
 
+main {
+  padding-bottom: var(--gap-xl);
+}
+
 body {
   background-color: var(--color-surface-page);
   color: var(--color-text-primary);
@@ -167,6 +171,7 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  height: 36px;
   gap: var(--gap-sm);
   padding: var(--padding-button-y) var(--padding-button-x);
   border-radius: var(--radius-sm);
@@ -184,6 +189,17 @@ body {
 
 .btn-primary:hover {
   background-color: var(--color-accent-hover);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border);
+}
+
+.btn-secondary:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent-hover);
 }
 
 /* --------------------------------------------------------------------

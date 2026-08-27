@@ -1,8 +1,9 @@
-export default function PicContainer({ src, alt }) {
+export default function PicContainer({ src = '/images/headshot.jpg', alt = '', width = 226, height = 264 }) {
+  const size = { width, height };
   return (
-    <div className="pic-container">
-      <div className="pic-container__back" />
-      <img src={src} alt={alt} className="pic-container__front" />
+    <div className="pic-container" style={size}>
+      <div className="pic-container__back" style={size} />
+      <img src={src} alt={alt} className="pic-container__front" style={size} />
     </div>
   );
 }

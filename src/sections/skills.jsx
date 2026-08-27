@@ -1,19 +1,32 @@
-import SkillTag from "../components/SkillTag";
-import Button from "../components/Button";
-
-const skills = ["Business Strategy", "Software Engineering", "Data Analytics"];
+const SKILLS = [
+  {
+    title:       'Data and Analytics',
+    description: 'Statistical Modeling, Machine Learning, Data Visualization',
+  },
+  {
+    title:       'Software Engineering',
+    description: 'Full-Stack Development, Databases, AI/LLM Systems',
+  },
+  {
+    title:       'Business and Strategy',
+    description: 'Financial Modeling, Decision Analytics, Valuation',
+  },
+];
 
 export default function Skills() {
   return (
     <section className="skills">
-      <h2 className="skills__heading">Skills</h2>
-      <div className="skills__group">
-        {skills.map((s) => (
-          <SkillTag key={s} label={s} />
-        ))}
+      <div className="skills__inner">
+        <p className="text-label text-secondary">Skills</p>
+        <div className="skills__grid">
+          {SKILLS.map(skill => (
+            <div key={skill.title} className="skills__card surface-card surface-card--sm">
+              <h3 className="skills__card-title text-subheading">{skill.title}</h3>
+              <p className="skills__card-desc text-body-small text-secondary">{skill.description}</p>
+            </div>
+          ))}
+        </div>
       </div>
-      <Button variant="primary">View Projects</Button>
     </section>
   );
 }
-jsx

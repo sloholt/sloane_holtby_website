@@ -1,0 +1,28 @@
+.pic-container {
+  position: relative;
+  width: 226px;
+  height: 264px;
+}
+
+.pic-container__back {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  width: 226px;
+  height: 264px;
+  background-color: #e5e7eb;
+  border-radius: var(--radius-md);
+  border: 8px solid #ffffff;
+}
+
+.pic-container__front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 226px;
+  height: 264px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  border: 8px solid #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}

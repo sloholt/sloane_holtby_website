@@ -1,7 +1,9 @@
-export default function Badge({ children }) {
+import '../styles/components/grad-badge.css';
+
+export default function Badge({ children, dot = true }) {
   return (
     <span className="badge">
-      <span className="badge__dot" />
+      {dot && <span className="badge__dot" />}
       {children}
     </span>
   );

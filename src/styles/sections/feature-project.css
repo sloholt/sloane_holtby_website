@@ -1,0 +1,118 @@
+.featured-project {
+  padding: var(--gap-xl) var(--gap-lg) 0;
+}
+
+.featured-project__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-sm);
+}
+
+.featured-project__label {
+  margin: 0;
+}
+
+/* Card */
+.featured-project__card {
+  background-color: var(--color-surface-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--padding-card);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-lg);
+}
+
+/* Top row: title + stats */
+.featured-project__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-lg);
+}
+
+.featured-project__title {
+  margin: 0;
+  font-size: var(--font-size-heading);
+  line-height: var(--line-height-heading);
+  color: var(--color-text-primary);
+}
+
+/* Stat boxes */
+.featured-project__stats {
+  display: flex;
+  gap: var(--gap-sm);
+  flex-shrink: 0;
+}
+
+.featured-project__stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  background-color: var(--color-badge-bg);
+  border-radius: var(--radius-sm);
+  padding: var(--gap-sm) var(--gap-md);
+}
+
+.featured-project__stat-label {
+  font-size: var(--font-size-caption);
+  line-height: var(--line-height-caption);
+  color: var(--color-text-secondary);
+}
+
+.featured-project__stat-value {
+  font-size: var(--font-size-subheading);
+  line-height: var(--line-height-subheading);
+  color: var(--color-text-primary);
+}
+
+/* Footer: tags + links */
+.featured-project__footer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-sm);
+}
+
+.featured-project__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-sm);
+}
+
+.featured-project__tag {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--padding-tag-y) var(--padding-tag-x);
+  border-radius: var(--radius-full);
+  background-color: var(--color-badge-bg);
+  color: var(--color-accent-hover);
+  font-size: var(--font-size-caption);
+  line-height: var(--line-height-caption);
+}
+
+.featured-project__links {
+  display: flex;
+  gap: var(--gap-md);
+}
+
+.featured-project__link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--gap-xs);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-caption);
+  line-height: var(--line-height-caption);
+  text-decoration: none;
+}
+
+.featured-project__link:hover {
+  color: var(--color-accent);
+}
+
+.featured-project__link-icon {
+  width: 13px;
+  height: 13px;
+  object-fit: contain;
+}

@@ -1,0 +1,17 @@
+.hero .badge {
+  width: 349px;
+  height: 36px;
+  padding: 3px var(--padding-tag-x);
+  font-size: var(--font-size-label);
+  line-height: var(--line-height-label);
+  white-space: nowrap;
+}
+
+.badge__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-accent);
+  flex-shrink: 0;
+  margin-right: var(--gap-xs);
+}
