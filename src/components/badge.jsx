@@ -1,4 +1,4 @@
-import '../styles/components/grad-badge.css';
+import '../styles/components/badge.css';
 
 export default function Badge({ children, dot = true }) {
   return (

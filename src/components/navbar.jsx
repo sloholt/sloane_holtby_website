@@ -5,15 +5,15 @@ export default function NavBar() {
     <nav className="navbar">
       <div className="navbar__inner">
         <div className="navbar__logo">
-          <Link to="/"><img alt="Logo" src="/sh_logo.png" /></Link>
+          <Link to="/"><img alt="Logo" src="/sh_logo_hd.png" /></Link>
         </div>
 
         <div className="navbar__links">
           <Link to="/about"    className="navbar__link">About</Link>
-          <a href="#education" className="navbar__link">Education</a>
+          <Link to="/education" className="navbar__link">Education</Link>
           <a href="#projects"  className="navbar__link">Projects</a>
-          <a href="#experience" className="navbar__link">Experience</a>
-          <a href="#contact"   className="navbar__link">Contact</a>
+          <Link to="/experience" className="navbar__link">Experience</Link>
+          <Link to="/contact"   className="navbar__link">Contact</Link>
           <a href="/resume.pdf" className="btn btn-primary">Download CV</a>
         </div>
       </div>

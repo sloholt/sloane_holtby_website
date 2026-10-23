@@ -72,6 +72,7 @@
 .featured-project__footer {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: var(--gap-sm);
 }
 
@@ -94,6 +95,7 @@
 
 .featured-project__links {
   display: flex;
+  align-items: center;
   gap: var(--gap-md);
 }
 

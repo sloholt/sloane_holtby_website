@@ -13,7 +13,7 @@ export default function Hero() {
     <section className="hero">
       <div className="hero__content">
         <div className="hero__text">
-          <Badge>Graduating May 2027 · open to full-time roles &amp; relocation</Badge>
+          <Badge>Graduating May 2027 <span className="badge__separator">·</span> open to full-time roles &amp; relocation</Badge>
           <h1 className="text-display">HEADING</h1>
           <p className="text-body text-secondary">Paragraph</p>
           <div className="hero__buttons">

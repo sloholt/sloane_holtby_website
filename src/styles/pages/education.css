@@ -1,0 +1,266 @@
+.education {
+  padding: var(--gap-xl) var(--gap-lg) 0;
+}
+
+.education__inner {
+  max-width: 1034px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-lg);
+}
+
+.education h1,
+.education h2,
+.education h3,
+.education h4,
+.education p {
+  margin: 0;
+}
+
+/* Intro */
+.education__intro {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+
+.education__intro-text {
+  max-width: 590px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-md);
+}
+
+.education__heading {
+  font-weight: 400;
+}
+
+.education__intro .badge {
+  color: var(--color-accent);
+}
+
+.education__photo {
+  flex-shrink: 0;
+  padding-right: var(--gap-lg);
+  padding-bottom: var(--gap-lg);
+}
+
+/* Cards */
+.education__card + .education__card {
+  margin-top: var(--gap-sm);
+}
+
+.education__card {
+  background-color: var(--color-surface-card);
+  border-radius: var(--radius-md);
+  padding: var(--gap-lg) var(--gap-md) var(--gap-xl);
+}
+
+.education__card--ut {
+  display: grid;
+  grid-template-columns: 1fr 328px;
+  padding: var(--gap-lg) 66px 30px 15px;
+}
+
+.education__card--ut .education__main {
+  padding-right: var(--gap-lg);
+}
+
+.education__card--ut .education__desc {
+  max-width: 510px;
+}
+
+.education__card--ut .education__pills {
+  margin-top: var(--gap-lg);
+}
+
+.education__main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xs);
+}
+
+.education__title-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--gap-md);
+}
+
+.education__school {
+  font-weight: 500;
+}
+
+.education__current {
+  padding: 1px var(--gap-sm);
+  border-radius: var(--radius-full);
+  background-color: var(--color-badge-bg);
+  color: #10b987;
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 600;
+}
+
+.education__meta {
+  font-weight: 300;
+}
+
+.education__degree {
+  margin-top: var(--gap-sm);
+  font-weight: 500;
+}
+
+.education__desc {
+  max-width: 750px;
+}
+
+.education__desc + .education__desc {
+  margin-top: var(--gap-md);
+}
+
+/* Course pills */
+.education__pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-sm);
+  margin-top: var(--gap-lg);
+  padding-left: var(--gap-sm);
+}
+
+.education__pill {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--gap-xs) var(--padding-tag-x);
+  border-radius: var(--radius-full);
+  background-color: var(--color-badge-bg);
+  color: #10b987;
+  white-space: nowrap;
+}
+
+.education__pills--sm {
+  gap: 6px;
+  margin-top: var(--gap-sm);
+  padding-left: 0;
+}
+
+.education__pill--sm {
+  padding: 2px var(--gap-sm);
+}
+
+/* UT stats */
+.education__stats {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--gap-xl);
+  margin-top: var(--gap-sm);
+  padding-left: 36px;
+  border-left: 1px solid var(--color-text-primary);
+}
+
+.education__stat {
+  width: 130px;
+  height: 103px;
+  display: flex;
+  flex-direction: column;
+  padding: 12px var(--gap-xs) 12px 14px;
+  border-radius: var(--radius-md);
+  background-color: var(--color-badge-bg);
+  color: var(--color-accent-hover);
+}
+
+.education__stat-icon {
+  width: 30px;
+  height: 31px;
+  object-fit: contain;
+  object-position: left;
+  margin-bottom: 6px;
+}
+
+.education__stat-label {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.education__stat-value {
+  margin-top: var(--gap-xs);
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.education__stat-value--sm {
+  font-size: 13px;
+  line-height: 14px;
+}
+
+/* McGill */
+.education__mcgill-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+
+.education__subjects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin-top: var(--gap-lg);
+  padding: 0 var(--gap-xl);
+}
+
+.education__subject {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-sm);
+  padding: var(--gap-md) 20px 20px;
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface-page);
+}
+
+.education__subject-header {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-sm);
+  margin-bottom: var(--gap-xs);
+}
+
+.education__subject-icon {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.education__subject-title {
+  font-weight: 500;
+  color: var(--color-accent-hover);
+}
+
+.education__subject-desc {
+  color: #000000;
+}
+
+@media (max-width: 900px) {
+  .education__intro,
+  .education__mcgill-top {
+    flex-direction: column;
+  }
+
+  .education__card--ut {
+    grid-template-columns: 1fr;
+  }
+
+  .education__stats {
+    padding-left: 0;
+    border-left: none;
+  }
+
+  .education__subjects {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+}

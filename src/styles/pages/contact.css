@@ -1,0 +1,123 @@
+.contact {
+  padding: 64px var(--gap-lg) 0;
+}
+
+.contact__inner {
+  max-width: 948px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact__heading {
+  margin: 0;
+  font-size: 56px;
+  line-height: 68px;
+  font-weight: 700;
+}
+
+.contact__lead {
+  max-width: 560px;
+  margin: var(--gap-sm) 0 0;
+}
+
+.contact__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap-lg);
+  margin-top: 56px;
+  text-align: left;
+}
+
+/* Card */
+.contact__card {
+  --contact-tint: var(--color-badge-bg);
+  --contact-ink: var(--color-accent-hover);
+
+  display: flex;
+  flex-direction: column;
+  padding: 28px;
+  background-color: var(--color-surface-page);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+}
+
+.contact__card--github {
+  --contact-tint: #eeefed;
+  --contact-ink: var(--color-text-primary);
+}
+
+.contact__card--linkedin {
+  --contact-tint: #e1eefb;
+  --contact-ink: #06468e;
+}
+
+.contact__icon {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-full);
+  background-color: var(--contact-tint);
+}
+
+.contact__icon img {
+  width: 28px;
+  height: 28px;
+}
+
+.contact__title {
+  margin: 18px 0 0;
+  font-weight: 700;
+}
+
+.contact__handle {
+  margin: var(--gap-sm) 0 0;
+}
+
+.contact__divider {
+  width: 100%;
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid var(--color-border);
+}
+
+.contact__action {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-sm);
+  height: 40px;
+  padding: 0 var(--padding-tag-x);
+  border-radius: var(--radius-sm);
+  background-color: var(--contact-tint);
+  color: var(--contact-ink);
+  font-size: var(--font-size-label);
+  font-weight: 600;
+  text-decoration: none;
+  transition: filter 0.15s ease;
+}
+
+.contact__action:hover {
+  filter: brightness(0.96);
+}
+
+.contact__arrow {
+  width: 14px;
+  height: 14px;
+}
+
+@media (max-width: 900px) {
+  .contact__heading {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .contact__grid {
+    grid-template-columns: 1fr;
+  }
+}
