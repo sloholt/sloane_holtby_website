@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import NavBar from './components/navbar';
+import EndDivider from './components/enddivider';
 import Home from './pages/home';
 import About from './pages/about';
 import Education from './pages/education';
@@ -7,6 +8,7 @@ import Contact from './pages/contact';
 import Experience from './pages/experience';
 
 import './styles/components/navbar.css';
+import './styles/components/end-divider.css';
 import './styles/components/pic-container.css';
 import './styles/sections/hero.css';
 import './styles/sections/feature-project.css';
@@ -24,6 +26,7 @@ function App() {
           <Route path="/experience" element={<Experience />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <EndDivider />
       </main>
     </>
   );

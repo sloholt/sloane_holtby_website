@@ -260,30 +260,6 @@
   text-align: left;
 }
 
-/* End divider */
-.experience__end {
-  display: flex;
-  align-items: center;
-  gap: var(--gap-lg);
-  margin-top: 34px;
-}
-
-.experience__end-line {
-  flex: 1;
-  min-width: 0;
-  height: 3px;
-}
-
-.experience__end-line--right {
-  transform: scaleX(-1);
-}
-
-.experience__end-logo {
-  width: 168px;
-  height: 45px;
-  flex-shrink: 0;
-}
-
 @media (max-width: 900px) {
   .experience__heading {
     font-size: 34px;

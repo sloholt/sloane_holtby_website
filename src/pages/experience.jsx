@@ -38,7 +38,7 @@ const EXPERIENCE = [
       'Developed front-end and back-end systems using TypeScript and SQL.',
       'Presented the business case for investing in developer experience to non-technical management, translating technical improvements into benefits for productivity, code quality, and delivery speed.',
     ],
-    tags: ['React', 'Node.js', 'GitHub Copilot', 'SonarCloud', 'DevOps', 'AWS'],
+    tags: ['TypeScript', 'GitHub', 'GitHub Copilot', 'SonarCloud', 'CI/CD Pipelines', 'AWS', 'Python'],
   },
   {
     year:     '2023',
@@ -169,12 +169,6 @@ export default function Experience() {
               </ul>
             </article>
           ))}
-        </div>
-
-        <div className="experience__end" aria-hidden="true">
-          <img src="/icons/divider-taper.svg" alt="" className="experience__end-line" />
-          <img src="/sh_logo_grey_hd.png" alt="" className="experience__end-logo" />
-          <img src="/icons/divider-taper.svg" alt="" className="experience__end-line experience__end-line--right" />
         </div>
 
       </div>
