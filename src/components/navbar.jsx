@@ -11,10 +11,10 @@ export default function NavBar() {
         <div className="navbar__links">
           <Link to="/about"    className="navbar__link">About</Link>
           <Link to="/education" className="navbar__link">Education</Link>
-          <a href="#projects"  className="navbar__link">Projects</a>
+          <Link to="/projects"  className="navbar__link">Projects</Link>
           <Link to="/experience" className="navbar__link">Experience</Link>
           <Link to="/contact"   className="navbar__link">Contact</Link>
-          <a href="/resume.pdf" className="btn btn-primary">Download CV</a>
+          <a href="/Sloane_Holtby_Resume.pdf" download="Sloane_Holtby_Resume.pdf" className="btn btn-primary">Download CV</a>
         </div>
       </div>
     </nav>

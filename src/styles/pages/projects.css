@@ -1,0 +1,257 @@
+.projects {
+  padding: var(--gap-xl) var(--gap-lg) 0;
+}
+
+.projects__inner {
+  max-width: 1232px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xl);
+}
+
+.projects__sections {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.projects h1,
+.projects h2,
+.projects h3,
+.projects p {
+  margin: 0;
+}
+
+/* Page header */
+.projects__header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-md);
+}
+
+.projects__header .badge {
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.projects__heading {
+  font-size: 42px;
+  line-height: 50px;
+  font-weight: 700;
+}
+
+.projects__lead {
+  max-width: 600px;
+  font-size: var(--font-size-subheading);
+  line-height: 26px;
+}
+
+/* Sections */
+.projects__section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xl);
+}
+
+.projects__section-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-sm);
+}
+
+.projects__eyebrow {
+  color: #2d7a57;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.projects__section-title {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.projects__section-lead {
+  font-size: var(--font-size-subheading);
+  line-height: 26px;
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+/* Project card */
+.projects__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--gap-md);
+  padding: var(--gap-lg);
+  background-color: var(--color-surface-page);
+  border: 1px solid #e4e7e1;
+  border-radius: 10px;
+}
+
+.projects__card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.projects__category {
+  color: #2d7a57;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.projects__title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.projects__description {
+  color: #4a5046;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.projects__note {
+  display: block;
+  font-size: 10px;
+  line-height: 22px;
+  font-weight: 600;
+}
+
+.projects__card-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.projects__outcome {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xs);
+  padding: 10px var(--padding-tag-x);
+  background-color: var(--color-surface-card);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+}
+
+.projects__outcome-label {
+  color: #2d7a57;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.projects__outcome-text {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.projects__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.projects__tag {
+  padding: var(--gap-xs) 9px;
+  border-radius: 4px;
+  background-color: var(--color-badge-bg);
+  color: var(--color-accent-hover);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+}
+
+/* NDA notice + links */
+.projects__nda,
+.projects__link {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px var(--padding-tag-x) 7px 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.projects__nda {
+  gap: 7px;
+  background-color: var(--color-surface-card);
+  border-style: dashed;
+}
+
+.projects__nda-title {
+  font-weight: 600;
+}
+
+.projects__nda-text {
+  color: var(--color-text-secondary);
+}
+
+.projects__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-sm);
+}
+
+.projects__link {
+  gap: 6px;
+  background-color: var(--color-surface-page);
+  color: var(--color-text-primary);
+  font-weight: 600;
+  text-decoration: none;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.projects__link:hover {
+  border-color: var(--color-accent);
+}
+
+.projects__link--live {
+  padding-left: var(--padding-tag-x);
+  background-color: var(--color-text-primary);
+  border-color: var(--color-text-primary);
+  color: #ffffff;
+}
+
+.projects__link--live:hover {
+  background-color: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+}
+
+@media (max-width: 900px) {
+  .projects__sections {
+    gap: 48px;
+  }
+
+  .projects__heading {
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  .projects__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects__nda {
+    flex-wrap: wrap;
+    white-space: normal;
+  }
+}

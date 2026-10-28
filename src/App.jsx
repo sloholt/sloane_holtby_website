@@ -6,6 +6,7 @@ import About from './pages/about';
 import Education from './pages/education';
 import Contact from './pages/contact';
 import Experience from './pages/experience';
+import Projects from './pages/projects';
 
 import './styles/components/navbar.css';
 import './styles/components/end-divider.css';
@@ -23,6 +24,7 @@ function App() {
           <Route path="/"      element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/education" element={<Education />} />
+          <Route path="/projects" element={<Projects />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

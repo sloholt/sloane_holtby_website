@@ -39,7 +39,8 @@
 }
 
 .education__intro .badge {
-  color: var(--color-accent);
+  font-weight: 600;
+  letter-spacing: 1.5px;
 }
 
 .education__photo {

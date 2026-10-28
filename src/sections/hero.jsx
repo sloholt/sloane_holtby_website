@@ -1,10 +1,11 @@
+import { Link } from 'react-router-dom';
 import Badge from '../components/badge';
 import PicContainer from '../components/piccontainer';
 
 const LINKS = {
-  viewProjects: '#projects',
+  viewProjects: '/projects',
   github:       'https://github.com/sloholt',
-  contact:      '#contact',
+  contact:      'mailto:sloaneholtby@gmail.com',
   linkedin:     'https://www.linkedin.com/in/sloane-holtby-58b76422a/',
 };
 
@@ -17,7 +18,7 @@ export default function Hero() {
           <h1 className="text-display">HEADING</h1>
           <p className="text-body text-secondary">Paragraph</p>
           <div className="hero__buttons">
-            <a href={LINKS.viewProjects} className="btn btn-primary">View Projects &rarr;</a>
+            <Link to={LINKS.viewProjects} className="btn btn-primary">View Projects &rarr;</Link>
             <a href={LINKS.github}       className="btn btn-secondary" target="_blank" rel="noreferrer">GitHub</a>
             <a href={LINKS.contact}      className="btn btn-secondary">Contact</a>
             <a href={LINKS.linkedin}     className="btn btn-secondary" target="_blank" rel="noreferrer">LinkedIn</a>
