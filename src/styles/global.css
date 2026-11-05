@@ -7,6 +7,8 @@
   /* --------------------------------------------------------------------
      Typography
      -------------------------------------------------------------------- */
+  --font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
   --font-size-display: 32px;
   --line-height-display: 40px;
 
@@ -93,7 +95,15 @@ main {
   padding-bottom: var(--gap-xl);
 }
 
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
 body {
+  font-family: var(--font-family-base);
   background-color: var(--color-surface-page);
   color: var(--color-text-primary);
   font-size: var(--font-size-body);

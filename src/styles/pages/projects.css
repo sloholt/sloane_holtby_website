@@ -119,9 +119,10 @@
 }
 
 .projects__description {
-  color: #4a5046;
-  font-size: 14px;
-  line-height: 22px;
+  color: #1a1f36;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0.1px;
 }
 
 .projects__note {
@@ -217,7 +218,9 @@
   color: var(--color-text-primary);
   font-weight: 600;
   text-decoration: none;
-  transition: border-color 0.15s ease, background-color 0.15s ease;
+  transition:
+    border-color 0.15s ease,
+    background-color 0.15s ease;
 }
 
 .projects__link:hover {

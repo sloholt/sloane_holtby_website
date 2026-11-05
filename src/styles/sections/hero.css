@@ -18,6 +18,15 @@
   gap: var(--gap-md);
 }
 
+/* Drop the browser's default margins between the heading and intro so only the flex gap separates them */
+.hero__text h1 {
+  margin-bottom: 0;
+}
+
+.hero__text p {
+  margin-top: 0;
+}
+
 .hero__buttons {
   display: flex;
   flex-wrap: wrap;

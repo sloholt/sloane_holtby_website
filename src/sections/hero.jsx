@@ -15,8 +15,8 @@ export default function Hero() {
       <div className="hero__content">
         <div className="hero__text">
           <Badge>Graduating May 2027 <span className="badge__separator">·</span> open to full-time roles &amp; relocation</Badge>
-          <h1 className="text-display">HEADING</h1>
-          <p className="text-body text-secondary">Paragraph</p>
+          <h1 className="text-display">Bridging technical thinking and business impact.</h1>
+          <p className="text-body text-secondary">I'm Sloane, a Master's student in Business Analytics at UT Austin with a background in mathematical statistics and software engineering from McGill University. I take a multidisciplinary approach to problem-solving, combining quantitative analysis, technology, and business strategy to develop practical solutions <br /> to complex challenges.</p>
           <div className="hero__buttons">
             <Link to={LINKS.viewProjects} className="btn btn-primary">View Projects &rarr;</Link>
             <a href={LINKS.github}       className="btn btn-secondary" target="_blank" rel="noreferrer">GitHub</a>
@@ -25,7 +25,11 @@ export default function Hero() {
           </div>
         </div>
         <div className="hero__image">
-          <PicContainer alt="Sloane Holtby" />
+          <PicContainer
+            src="/images/headshot@2x.jpg"
+            srcSet="/images/headshot@1x.jpg 1x, /images/headshot@2x.jpg 2x, /images/headshot@3x.jpg 3x"
+            alt="Sloane Holtby"
+          />
         </div>
       </div>
     </section>

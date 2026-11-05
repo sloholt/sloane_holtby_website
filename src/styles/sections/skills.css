@@ -7,7 +7,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: var(--gap-xs);
+  gap: 12px;
 }
 
 .skills__label {
@@ -17,15 +17,14 @@
 .skills__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 70px;
+  gap: var(--gap-lg);
 }
 
 .skills__card {
   display: flex;
   flex-direction: column;
-  gap: var(--gap-sm);
-  min-height: 84px;
-  padding: var(--gap-sm) 10px;
+  gap: 6px;
+  padding: 20px var(--gap-lg);
   background-color: var(--color-surface-card);
   border-radius: var(--radius-md);
 }

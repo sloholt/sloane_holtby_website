@@ -10,7 +10,7 @@ const SECTIONS = [
       {
         category:    'Survival Analysis · Oncology',
         title:       'G-CSF and Survival in Advanced Non-Small Cell Lung Cancer',
-        description: 'Survival analysis for a Jewish General Hospital team on 127 advanced NSCLC patients. Estimated Kaplan-Meier curves and log-rank tests, used swimmer plots to expose immortal time bias in a fixed-covariate Cox model, then corrected it with a 120-day landmark analysis and a time-dependent (Mantel-Byar) Cox model, validated with Schoenfeld, deviance and martingale residuals.',
+        description: 'Survival analysis for the Montreal Jewish General Hospital team on 127 advanced NSCLC patients. Estimated Kaplan-Meier curves and log-rank tests, used swimmer plots to expose immortal time bias in a fixed-covariate Cox model, then corrected it with a 120-day landmark analysis and a time-dependent (Mantel-Byar) Cox model, validated with Schoenfeld, deviance and martingale residuals.',
         outcome:     'The apparent survival benefit was entirely due to immortal time bias; after correction, G-CSF had no significant effect on survival.',
         tags:        ['Time-Dependent Cox', 'Landmark Analysis', 'Kaplan-Meier', 'Log-Rank Test', 'R'],
         nda:         true,
@@ -44,7 +44,7 @@ const SECTIONS = [
   {
     eyebrow: 'Partner Projects',
     title:   'Industry Collaborations',
-    lead:    'Data science prototypes built with industry partners.',
+    lead:    'Data science prototypes built with industry partners as part of my practicum at McGill University.',
     projects: [
       {
         category:    'Time Series · Energy · Olameter',
@@ -61,6 +61,21 @@ const SECTIONS = [
         outcome:     'Expansion recommendations across three Canadian metro regions, delivered via R Shiny and ArcGIS.',
         tags:        ['Location-Allocation', 'Spatial Interaction Models', 'Network Analysis', 'R Shiny', 'ArcGIS', 'R', 'Python'],
         nda:         true,
+      },
+    ],
+  },
+  {
+    eyebrow: 'Finance Projects',
+    title:   'Quantitative Finance',
+    lead:    'Portfolio construction, optimization and backtesting with financial market data.',
+    projects: [
+      {
+        category:    'Portfolio Theory · Optimization · Backtesting',
+        title:       'Mean-Variance Portfolio Optimization of Sector ETFs',
+        description: 'Built Markowitz portfolios for 11 SPDR sector ETFs from 96 months of returns, finding the minimum-variance, efficient and max-Sharpe portfolios along with the efficient frontier and capital allocation line. Then backtested 12 variants (CAPM-shrunk means, Ledoit-Wolf covariance, weight caps) on 36 unseen months against a client portfolio and 10,000 random ones.',
+        outcome:     'Long-only max-Sharpe portfolios beat the client out of sample (Sharpe 1.27 vs 1.02); unconstrained portfolios fell from 1.47 in-sample to 0.01.',
+        tags:        ['Mean-Variance Optimization', 'Efficient Frontier', 'Ledoit-Wolf Shrinkage', 'CAPM', 'Rolling Backtest', 'Python', 'Excel'],
+        code:        'https://github.com/sloholt/quant_finance_projects/tree/main/portfolio_optimization',
       },
     ],
   },
@@ -89,7 +104,7 @@ const SECTIONS = [
       {
         category:    'Web Development · UI Design',
         title:       'Elli & Winston: A Custom Wedding Website',
-        description: 'Designed in Figma and built from scratch as a React single-page app using Vite, React 19 and React Router v7, with Home, Details and RSVP routes. Translated the Figma designs into a hand-written CSS design system of color variables, typography, buttons and layout utilities, pairing Adobe Fonts with Google Fonts.',
+        description: 'Designed in Figma and built from scratch as a React single-page interactive app using Vite, React and React Router v7, with Home, Details and RSVP routes. Translated the Figma designs into a hand-written CSS design system of color variables, typography, buttons and layout utilities, pairing Adobe Fonts with Google Fonts.',
         note:        'ATTENTION: This is a live website; please do not RSVP',
         outcome:     'Live on a custom domain at theclarkeswedding.com, with the original Figma designs versioned alongside the code.',
         tags:        ['React', 'HTML', 'JavaScript', 'CSS', 'Figma', 'Adobe Fonts'],
@@ -157,8 +172,7 @@ export default function Projects() {
           <Badge>PROJECTS</Badge>
           <h1 className="projects__heading">Data Analysis &amp; Software Engineering</h1>
           <p className="projects__lead text-secondary">
-            A collection of projects spanning statistical consulting, machine learning, data analytics,
-            and software development, applying technical methods to solve real-world problems across industries.
+            A collection of projects spanning statistical consulting, machine learning, data analytics,software development and financial analysis, applying technical methods to solve real-world problems across industries.
           </p>
         </header>
 

@@ -98,8 +98,7 @@ export default function Experience() {
           <Badge>EXPERIENCE</Badge>
           <h1 className="experience__heading">Experience in Practice</h1>
           <p className="experience__lead text-secondary">
-            From building software to analyzing team performance, my experiences are shaped by
-            problem-solving, collaboration, and working with people.
+            From research to software development, I've applied analytical thinking and technical skills to solve real-world problems, build practical solutions, and turn ideas into impact.
           </p>
         </header>
 

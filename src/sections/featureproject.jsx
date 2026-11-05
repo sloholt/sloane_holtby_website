@@ -1,6 +1,6 @@
 const PROJECT = {
   title:       'Salary Dispersion and NHL Team Performance',
-  description: 'PARAGRAPH',
+  description: 'Investigated the relationship between NHL salary distribution and team performance through the full data science lifecycle, from data collection and statistical modeling to interpretation and communication. I developed an interactive dashboard and research paper to translate complex statistical findings into accessible, actionable insights for both technical and non-technical audiences.',
   stats: [
     { label: 'Seasons modeled', value: '2015-2024' },
     { label: 'Deliverables',    value: 'Paper + App' },
@@ -21,7 +21,10 @@ export default function FeaturedProject() {
         <div className="featured-project__card">
 
           <div className="featured-project__top">
-            <h2 className="featured-project__title">{PROJECT.title}</h2>
+            <div className="featured-project__intro">
+              <h2 className="featured-project__title">{PROJECT.title}</h2>
+              <p className="featured-project__description text-secondary">{PROJECT.description}</p>
+            </div>
             <div className="featured-project__stats">
               {PROJECT.stats.map(stat => (
                 <div key={stat.label} className="featured-project__stat">
@@ -31,8 +34,6 @@ export default function FeaturedProject() {
               ))}
             </div>
           </div>
-
-          <p className="text-body text-secondary">{PROJECT.description}</p>
 
           <div className="featured-project__footer">
             <div className="featured-project__tags">
