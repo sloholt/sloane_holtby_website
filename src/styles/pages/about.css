@@ -212,3 +212,18 @@
     flex-basis: auto;
   }
 }
+
+@media (max-width: 600px) {
+  .about {
+    padding: var(--gap-lg) var(--gap-md) 0;
+  }
+
+  .about__heading {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .about__fact-label {
+    flex-basis: 80px;
+  }
+}

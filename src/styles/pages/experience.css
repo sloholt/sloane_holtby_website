@@ -290,3 +290,33 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 600px) {
+  .experience {
+    padding: var(--gap-lg) var(--gap-md) 0;
+  }
+
+  .experience__heading {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .experience__subheading {
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  .experience__card {
+    padding: 20px;
+  }
+
+  .experience__card-top {
+    flex-wrap: wrap;
+    gap: var(--gap-sm);
+  }
+
+  .experience__bullets,
+  .experience__bullets--sm {
+    padding-left: 20px;
+  }
+}

@@ -258,3 +258,27 @@
     white-space: normal;
   }
 }
+
+@media (max-width: 600px) {
+  .projects {
+    padding: var(--gap-lg) var(--gap-md) 0;
+  }
+
+  .projects__heading {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .projects__section-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .projects__grid {
+    gap: 20px;
+  }
+
+  .projects__card {
+    padding: 20px;
+  }
+}

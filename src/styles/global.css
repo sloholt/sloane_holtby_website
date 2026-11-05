@@ -268,3 +268,27 @@ body {
 .gap-xl {
   gap: var(--gap-xl);
 }
+
+/* --------------------------------------------------------------------
+   Phone screens (desktop layout is unaffected)
+   -------------------------------------------------------------------- */
+
+@media (max-width: 600px) {
+  :root {
+    --font-size-display: 28px;
+    --line-height-display: 36px;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  body {
+    overflow-wrap: break-word;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}

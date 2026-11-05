@@ -265,3 +265,40 @@
     padding: 0;
   }
 }
+
+@media (max-width: 600px) {
+  .education {
+    padding: var(--gap-lg) var(--gap-md) 0;
+  }
+
+  .education__photo {
+    align-self: center;
+  }
+
+  .education__card,
+  .education__card--ut {
+    padding: 20px var(--gap-md) var(--gap-lg);
+  }
+
+  .education__card--ut .education__main {
+    padding-right: 0;
+  }
+
+  .education__stats {
+    flex-wrap: wrap;
+    gap: var(--gap-md);
+    margin-top: var(--gap-lg);
+  }
+
+  .education__pills {
+    padding-left: 0;
+  }
+
+  .education__pill {
+    white-space: normal;
+  }
+
+  .education__subjects {
+    gap: var(--gap-md);
+  }
+}

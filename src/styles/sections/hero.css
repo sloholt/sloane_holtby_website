@@ -44,3 +44,20 @@
   padding-right: 24px;
   padding-bottom: 24px;
 }
+
+/* Phone: stack the text above the photo */
+@media (max-width: 600px) {
+  .hero {
+    padding: var(--gap-lg) var(--gap-md) 0;
+  }
+
+  .hero__content {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-lg);
+  }
+
+  .hero__text br {
+    display: none;
+  }
+}

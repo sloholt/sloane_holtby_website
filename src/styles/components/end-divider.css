@@ -25,3 +25,18 @@
   height: 45px;
   flex-shrink: 0;
 }
+
+@media (max-width: 600px) {
+  .end-divider {
+    padding: 48px var(--gap-md) 0;
+  }
+
+  .end-divider__inner {
+    gap: var(--gap-md);
+  }
+
+  .end-divider__logo {
+    width: 120px;
+    height: auto;
+  }
+}

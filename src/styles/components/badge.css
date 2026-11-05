@@ -20,3 +20,11 @@
   font-size: 1.4em;
   line-height: 0;
 }
+
+@media (max-width: 600px) {
+  .hero .badge {
+    height: auto;
+    padding: 6px var(--padding-tag-x);
+    white-space: normal;
+  }
+}

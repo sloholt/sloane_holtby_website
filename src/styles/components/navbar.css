@@ -33,3 +33,26 @@
 .navbar__link:hover {
   color: var(--color-accent-hover);
 }
+
+/* Phone: stack the logo above the links and let the links wrap */
+@media (max-width: 600px) {
+  .navbar {
+    padding: var(--gap-md);
+  }
+
+  .navbar__inner {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .navbar__links {
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 20px;
+  }
+
+  .navbar__link {
+    font-size: var(--font-size-label);
+  }
+}

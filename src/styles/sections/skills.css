@@ -45,3 +45,9 @@
     gap: var(--gap-md);
   }
 }
+
+@media (max-width: 600px) {
+  .skills {
+    padding: var(--gap-lg) var(--gap-md) 0;
+  }
+}

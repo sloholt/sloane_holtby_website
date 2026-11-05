@@ -121,3 +121,23 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 600px) {
+  .contact {
+    padding: 40px var(--gap-md) 0;
+  }
+
+  .contact__heading {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .contact__grid {
+    margin-top: 32px;
+    gap: var(--gap-md);
+  }
+
+  .contact__card {
+    padding: 20px;
+  }
+}
