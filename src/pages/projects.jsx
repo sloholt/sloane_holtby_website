@@ -77,6 +77,14 @@ const SECTIONS = [
         tags:        ['Mean-Variance Optimization', 'Efficient Frontier', 'Ledoit-Wolf Shrinkage', 'CAPM', 'Rolling Backtest', 'Python', 'Excel'],
         code:        'https://github.com/sloholt/quant_finance_projects/tree/main/portfolio_optimization',
       },
+      {
+        category:    'Asset Pricing · Factor Models · Dashboard',
+        title:       'CAPM vs. Fama–French on 25 Size/Value Portfolios',
+        description: 'Tested CAPM and the Fama–French three-factor model on 25 size × book-to-market portfolios using time-series regressions, the GRS joint-alpha test, one-shot cross-sectional regressions and Fama–MacBeth, all built in NumPy and checked against a reference workbook and class tables. An interactive Plotly Dash dashboard lets users pick the date range, factors and models.',
+        outcome:     'Over 360 months (1963–93), GRS rejects CAPM (F = 2.33, p < 0.001) but not the three-factor model (F = 1.53, p = 0.053); cross-sectional R² rises from 0.05 to 0.79.',
+        tags:        ['Time-Series Regression', 'GRS Test', 'Fama–MacBeth', 'Cross-Sectional Regression', 'Factor Models', 'Python', 'Plotly Dash'],
+        code:        'https://github.com/sloholt/quant_finance_projects/tree/main/ff3-matrix-regressions',
+      },
     ],
   },
   {
